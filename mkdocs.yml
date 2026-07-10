@@ -1,0 +1,9 @@
+site_name: OpenProcurementHub
+theme: {name: material}
+nav:
+  - Home: index.md
+  - Architecture: architecture.md
+  - Quick Start: quick-start.md
+  - Connector Development: connector-development.md
+  - API: api.md
+  - CLI: cli.md

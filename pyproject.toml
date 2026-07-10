@@ -1,0 +1,21 @@
+[tool.ruff]
+target-version = "py313"
+line-length = 100
+src = ["packages"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "B", "SIM", "RUF"]
+ignore = ["E501", "E701", "E702"]
+
+[tool.black]
+line-length = 100
+target-version = ["py313"]
+
+[tool.mypy]
+python_version = "3.13"
+strict = true
+packages = ["openprocurementhub_core", "openprocurementhub_api", "openprocurementhub_cli", "openprocurementhub_connector_sdk", "openprocurementhub_connector_belgium", "openprocurementhub_sdk"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+asyncio_mode = "auto"
